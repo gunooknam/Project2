@@ -4,6 +4,9 @@
 #include <unistd.h>
 #include <time.h>
 
+#define 	FILE_NAME_1		"text1"
+#define 	FILE_NAME_2		"text2"
+
 struct stat stat1, stat2;
 struct tm time1, time2;
 
@@ -31,11 +34,17 @@ int main(void)
 //파일 1의 정보를 가져오는 함수 작성
 void filestat1(void)
 {
+	if(stat(FILE_NAME_1, &stat1) == -1) {
+		perror("stat() error");
+	}
 }
 
 //파일 2의 정보를 가져오는 함수 작성
 void filestat2(void)
 {
+	if(stat(FILE_NAME_2, &stat1) == -1) {
+		perror("stat() error");
+	}
 }
 
 //파일 1의 시간 정보를 가져오는 함수 작성
