@@ -10,7 +10,7 @@
 
 # Introduction
 
-linux unbuntu(16.04 LTS) 상에서 동작하는 두 개의 파일을 비교 비교하는 프로그램입니다.
+linux unbuntu(16.04 LTS) 상에서 동작하는 두 개의 파일을 비교하는 프로그램입니다.
 
 
 # Installation
