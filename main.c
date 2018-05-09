@@ -87,36 +87,36 @@ void blockcmp(void)
 void datecmp(void)
 {
 	printf("date compare\n");
-	if(time1.tm_mon == time1.tm_mon)
+	if(time1.tm_mon == time2.tm_mon)
 	{
-		if(time1.tm_mday == time1.tm_mday)
+		if(time1.tm_mday == time2.tm_mday)
 			printf("same date\n\n");
-		else if(time1.tm_mday > time1.tm_mday)
-			printf("text1 is later\n\n");
+		else if(time1.tm_mday > time2.tm_mday)
+			printf("text2 is early\n\n");
 		else 
-			printf("text2 is later\n\n");
+			printf("text1 is early\n\n");
 	}
-	else if(time1.tm_mon > time1.tm_mon)
-		printf("text1 is later\n\n");
+	else if(time1.tm_mon > time2.tm_mon)
+		printf("text2 is early\n\n");
 	else 
-		printf("text2 is bigger\n\n");
+		printf("text1 is early\n\n");
 }
 
 //두 개의 파일 수정 시간을 비교하는 함수 작성
 void timecmp(void)
 {
 	printf("time compare\n");
-	if(time1.tm_hour == time1.tm_hour)
+	if(time1.tm_hour == time2.tm_hour)
 	{
-		if(time1.tm_min == time1.tm_min)
+		if(time1.tm_min == time2.tm_min)
 			printf("same time\n\n");
-		else if(time1.tm_min > time1.tm_min)
-			printf("text1 is later\n\n");
+		else if(time1.tm_min > time2.tm_min)
+			printf("text2 is early\n\n");
 		else 
-			printf("text2 is later\n\n");
+			printf("text1 is early\n\n");
 	}
-	else if(time1.tm_hour > time1.tm_hour)
-		printf("text1 is later\n\n");
+	else if(time1.tm_hour > time2.tm_hour)
+		printf("text2 is early\n\n");
 	else 
-		printf("text2 is bigger\n\n");
+		printf("text1 is early\n\n");
 }
