@@ -18,9 +18,9 @@ linux unbuntu(16.04 LTS) 상에서 동작하는 두 개의 파일을 비교하�
  clone 후 해당 프로젝트 폴더에 들어가서 make로 컴파일하여 설치할 수 있습니다.
 
 ```
-git clone https://github.com/gunooknam/Project2.git
-cd Project2
-make
+user@ubuntu:~$git clone https://github.com/gunooknam/Project2.git
+user@ubuntu:~$cd Project2
+user@ubuntu:~/Project2$ make
 ```
 
 
@@ -29,7 +29,7 @@ make
 생성된 실행 파일인 test로 실행합니다.
 
 ```
-user@ubuntu:~/SE/Project2$ ./test
+user@ubuntu:~/Project2$ ./test
 size compare
 text2 is bigger
 
