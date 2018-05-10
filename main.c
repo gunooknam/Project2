@@ -3,6 +3,7 @@
 #include <sys/stat.h>
 #include <unistd.h>
 #include <time.h>
+#include <stdlib.h>
 
 #define 	FILE_NAME_1		"text1"
 #define 	FILE_NAME_2		"text2"
@@ -36,6 +37,7 @@ void filestat1(void)
 {
 	if(stat(FILE_NAME_1, &stat1) == -1) {
 		perror("stat() error");
+		exit(0);  		
 	}
 }
 
@@ -44,6 +46,7 @@ void filestat2(void)
 {
 	if(stat(FILE_NAME_2, &stat2) == -1) {
 		perror("stat() error");
+		exit(0);
 	}
 }
 
